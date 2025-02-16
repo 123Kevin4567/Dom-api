@@ -62,7 +62,7 @@ elementos.innerHTML =texto;
 
 body.style.backgroundColor = "#0007";
 setTimeout(()=>{
-    body.style.backgroundColor = "#fff";
+    body.style.backgroundColor = "#0009";
 },5000);
 
 
