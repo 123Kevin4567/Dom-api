@@ -58,7 +58,40 @@ $cards.append($card);
 // insertAdjacent
 
 
-// $cards.insertAdjacentElement("beforebegin", $card);
+$cards.insertAdjacentElement("beforebegin", $card);
 // $cards.insertAdjacentElement("afterbegin", $card);
 // $cards.insertAdjacentElement("beforeend", $card);
 // $cards.insertAdjacentElement("afterend", $card);
+
+// $cards.children.array.forEach(element => {
+//     console.log(element);
+    
+// });
+
+
+
+// for (let i = 0; $cards.children.length > i; i++) {
+//     console.log($cards.children[i]);    
+// }
+
+const array = [...$cards.children];
+
+array.map((item,index,array) =>{
+    if (index % 2 ==0) {
+        item.querySelector('a').classList.toggle('bg-error')
+    } else{
+        item.querySelector('a').classList.toggle('bg-white')
+    }
+})
+
+// array.map(item => {
+//     const button = item.querySelector('.button');
+    
+
+//     if (button.classList.contains('button--positive')) {
+//         button.style.backgroundColor = 'green'; 
+//     } else {
+//         button.style.backgroundColor = 'white';
+//     }
+// });
+

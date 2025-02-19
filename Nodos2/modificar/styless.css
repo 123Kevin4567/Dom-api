@@ -127,6 +127,8 @@ section {
   cursor: pointer;
 }
 
+
+
 .button--outline {
   background: var(--heavyMetal);
   color: var(--starship);
@@ -170,3 +172,13 @@ section {
 .before {
   color: var(--sycamore);
 }
+
+
+.bg-error{
+  background-color: yellow;
+}
+
+.bg-white{
+  background-color: blue;
+}
+
